@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <script src="../scripts/script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -46,6 +47,78 @@
         <span><i class="fa-solid fa-user-shield"></i> Admin Profile</span>
       </nav>
 
+      <section class="backdrop__modal">
+        <section class="form__modal">
+
+          <div class="modal__header">
+            <div class="modal__row">
+              <i class="fa-solid fa-arrow-left back"></i>
+              <h1>Add Record</h1>
+            </div>
+            <i class="fa-solid fa-check check"></i>
+          </div>
+          
+
+          <div class="modal__row" style="width: 78%;">
+            <span class="iconImage">
+            <i class="fa-solid fa-file-image "> </i><sup>+</sup>
+            </span>
+            <input type="text" placeholder="Name">
+          </div>
+          <div class="modal__row" style="width: 78%;">
+            <label for="">Overview</label>
+            <input type="text" placeholder="Breed">
+          </div>
+
+          <div class="modal__row" style="width: 100%;">
+
+            <input type="text" placeholder="Type">
+          </div>
+
+          <div class="modal__row" style="width: 100%;">
+
+            <span for=""> <input type="checkbox" name="" id=""> Adopted</span>
+          </div>
+
+          <div class="modal__row" style="width: 100%;">
+            <label for="">Info</label>
+
+            <div class="group__input">
+              <select>
+                <option value="">Gender</option>
+              </select>
+
+              <select>
+                <option value="">Age</option>
+              </select>
+
+              <select>
+                <option value="">Status</option>
+              </select>
+            </div>
+            
+          </div>
+
+          <div class="modal__row" style="width: 78%;">
+            <label for="">Description</label>
+            <input type="text" placeholder="Color">
+          </div>
+
+          <div class="modal__row" style="width:100%;">
+            <label for="">health Notes</label>
+            <textarea name="" id="" placeholder="Addition Health Notes"></textarea>
+          </div>
+
+            <!-- <button>Submit</button> -->
+        </section>
+        
+
+
+        
+        </section>
+      </section>
+
+
       <section class="animal__record__wrapper">
 
         <div class="row">
@@ -67,8 +140,8 @@
             <h1>Animal Record</h1>
 
               <div class="add__record__container">
-                <i class="fa-solid fa-circle-down download"></i>
-                <button><i class="fa-solid fa-plus"></i> Add Record</button>
+                <i class="fa-solid fa-download download"></i>
+                <button class="addRecordBtn"><i class="fa-solid fa-plus"></i> Add Record</button>
 
               <i class="fa-solid fa-ellipsis dotdotdot"></i>
 
@@ -80,14 +153,51 @@
         <section class="animal__list__record__wrapper">
             
             <section class="table__row table__header">
-                <div class="header title">#</div>
-                <div class="header title">Name</div>
-                <div class="header title">Breed</div>
-                <div class="header title">Type</div>
-                <div class="header title">Gender</div>
-                <div class="header title">Age</div>
-                <div class="header title">Description (color) </div>
-                <div class="header title">Status </div>
+                <div class="header id">#</div>
+                <div class="header name">Name</div>
+                <div class="header breed">Breed</div>
+                <div class="header type">Type</div>
+                <div class="header gender">Gender</div>
+                <div class="header age">Age</div>
+                <div class="header Description">Description (color) </div>
+                <div class="header status">Status </div>
+            </section>
+
+            <section class="animal__list__record__container">
+
+              <section class="table__row table__data">
+                <div class="data id">1</div>
+                <div class="data name">Jonas</div>
+                <div class="data breed">Poodle</div>
+                <div class="data type">Dog</div>
+                <div class="data gender">male</div>
+                <div class="data age">Young</div>
+                <div class="data Description">Black </div>
+                <div class="data status status-ready">  Ready </div>
+            </section>
+
+            <section class="table__row table__data">
+              <div class="data id">2</div>
+              <div class="data name">Twinkle</div>
+              <div class="data breed">Persian</div>
+              <div class="data type">Dog</div>
+              <div class="data gender">Female</div>
+              <div class="data age">Young</div>
+              <div class="data Description">White-black </div>
+              <div class="data status status-adopted">  Adopted </div>
+          </section>
+
+          <section class="table__row table__data">
+            <div class="data id">3</div>
+            <div class="data name">Steeve</div>
+            <div class="data breed">Aspin</div>
+            <div class="data type">Dog</div>
+            <div class="data gender">male</div>
+            <div class="data age">Young</div>
+            <div class="data Description">Brown-White </div>
+            <div class="data status status-pending">Pending </div>
+        </section>
+
             </section>
             
         </section>
