@@ -40,6 +40,7 @@ main {
 .sidebar__container > div {
   width: 100%;
   margin: 10px;
+  padding-inline: 15px;
 }
 
 .sidebar__container > div > a {
